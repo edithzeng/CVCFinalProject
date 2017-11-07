@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<title>Object Annotation Page</title>
+	<link rel="stylesheet" type="text/css" href="start.css"/>
+</head>
+<body>
+	<h1>Object Annotation Task</h1>
+	<h2>Instructions</h2>
+	<ol id="list1">
+		<li>You can see an image below with one object.</li>
+		<li>Your task is to create the tightest bounding box around the main object in the image.</li>
+		<li>For this, you can choose any shape from the options available and click on "Choose".</li>
+		<li>Then draw a bounding box around the main object in the image using that shape and click on "Submit".</li>
+	</ol>
+	<ul id="list2">
+		<li>Shadows are not part of the image and should not be included in the bounding box</li>
+		<li> If you see a flower, do not include the stem of the flower in the bounding box</li>
+	</ul><form>
+	<h3>Choose your shape</h3>
+	<input type="radio" name="r1" id="r1" value="1">Rectangle<br>
+	<input type="radio" name="r1" id="r1" value="2">Ellipse<br>
+	<input type="radio" name="r1" id="r1" value="3">Triangle<br>
+	<input type="radio" name="r1" id="r1" value="4">Pentagon<br><br>
+	<input type="submit" id="choose" value="Choose" onClick="bchoose()"/></form>
+	<br><br>
+	<div style="display:none;">
+	<img id="img1" src="../images/Natural/124.jpg" alt="image" /></div>
+	<canvas id="mycanvas" width="700" height="500">
+	Your browser does not support the HTML 5 Canvas.</canvas>
+	<br><br>
+	<input type="submit" id="b2" style="height:200px;width:200px" value="Submit" />
+		<script src="start.js"></script>
+		
+</body>
+</html>
